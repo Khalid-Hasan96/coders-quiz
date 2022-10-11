@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Quizes.css'
 
 const Quizes = ({ quiz }) => {
-    console.log(quiz);
-    const { logo, name, total } = quiz;
+    const { id, logo, name, total } = quiz;
     return (
         <div className='quiz'>
             <img src={logo} alt="" />
@@ -13,7 +13,7 @@ const Quizes = ({ quiz }) => {
                     <p>Total Quiz: {total}</p>
                 </div>
                 <div>
-                    <button className='btn btn-success hover:bg-green-500'>Start Quiz</button>
+                    <button className='btn btn-success hover:bg-green-500'><Link to={`/quiz/${id}`}>Start Quiz</Link ></button>
                 </div>
             </div>
         </div>

@@ -1,16 +1,16 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Quizes from '../Quizes/Quizes';
-import MainImg from '../../images/main.png';
+import MainImg from '../../images/main.svg';
 
 const Home = () => {
     const getQuizContainer = useLoaderData();
     const quizContainer = getQuizContainer.data
     return (
-        <div className='w-11/12 m-auto'>
-            <div className='flex items-center justify-center p-5 border border-black'>
+        <div className='w-11/12 m-auto mt-5'>
+            <div className='flex items-center justify-center p-4'>
                 <div className='w-2/4'>
-                    <h4 className='text-xl font-semibold'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit odio autem ad suscipit in facere molestiae velit nemo. Minima alias aut, voluptatum impedit, repudiandae molestias doloribus voluptatibus quisquam unde, culpa repellendus sint cupiditate est? Ex impedit possimus eaque et delectus sed veniam, obcaecati, quisquam fugiat, soluta eos alias modi sapiente.</h4>
+                    <h4 className='text-xl font-semibold'>Hello developers. Welcome to <Link to='/' className='text-2xl text-yellow-400'>Coders Quiz</Link>. Is your basic knowledge about CSS, JavaScript, React & Git is strong? Then participate quizes on our website. </h4>
                 </div>
                 <div className='w-2/4'>
                     <img src={MainImg} alt="" />
