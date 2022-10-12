@@ -18,7 +18,7 @@ const Blog = () => {
                         This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.</p>
                 </div>
             </div>
-            <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-yellow-100 rounded-box">
+            <div tabIndex={1} className="collapse collapse-arrow border border-base-300 bg-yellow-100 rounded-box">
                 <div className="collapse-title text-xl font-bold bg-yellow-200">
                     How does Context API works?
                 </div>
@@ -32,7 +32,7 @@ const Blog = () => {
                     </p>
                 </div>
             </div>
-            <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-red-100 rounded-box">
+            <div tabIndex={2} className="collapse collapse-arrow border border-base-300 bg-red-100 rounded-box">
                 <div className="collapse-title text-xl font-bold bg-red-200">
                     What you know about useRef() hook?
                 </div>

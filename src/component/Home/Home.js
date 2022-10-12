@@ -17,7 +17,8 @@ const Home = () => {
                     <img src={MainImg} alt="" />
                 </div>
             </div>
-            <h1 className='text-center mt-12'>Topics</h1>
+
+            <h1 className='text-center mt-12 text-3xl font-bold bg-yellow-300 w-1/4 mx-auto py-4 rounded-lg'>Topics</h1>
 
             <div className='sm:grid grid-cols-1 gap-4 p-5 md:grid-cols-4 mt-5'>
                 {

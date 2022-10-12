@@ -38,14 +38,16 @@ const QuestionAns = ({ questionAns }) => {
                 </div>
 
 
-                <div className='grid grid-cols-2 gap-4 mx-6'>
+                <div className='sm:grid grid-cols-1 gap-4 mx-6 md:grid-cols-2  '>
                     {
-                        options.map(option => <div className='flex items-center bg-white border rounded-lg p-2'>
-                            <p>
-                                <input type="radio" name="ans" onClick={() => verifyAnswer(option)} />
-                                <span className='ml-2'>{option}</span>
-                            </p>
-                        </div>)
+                        options.map(option =>
+                            <div className='flex items-center bg-white border rounded-lg p-2'>
+                                <p>
+                                    <input type="radio" name="ans" onClick={() => verifyAnswer(option)} />
+                                    <span className='ml-2'>{option}</span>
+                                </p>
+                            </div>
+                        )
                     }
                 </div>
             </div>

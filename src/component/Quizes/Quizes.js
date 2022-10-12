@@ -1,16 +1,12 @@
-import { createContext } from 'react';
 import { Link } from 'react-router-dom';
-import Questions from '../Questions/Questions';
 import './Quizes.css';
 
-export const NameContext = createContext('name')
 
 const Quizes = ({ quiz }) => {
     const { id, logo, name, total } = quiz;
-
     return (
         <div className='quiz bg-yellow-200'>
-            <img className='border border-black bg-yellow-100' src={logo} alt="" />
+            <img className='border border-black bg-gray-200' src={logo} alt="" />
             <div className='flex justify-between items-center mt-5'>
                 <div className='p-2'>
                     <h4 className='text-xl font-bold'>{name}</h4>
@@ -20,9 +16,7 @@ const Quizes = ({ quiz }) => {
                     <button className='btn btn-success hover:bg-green-500'><Link to={`/${id}`}>Start Quiz</Link ></button>
                 </div>
             </div>
-            <NameContext.Provider value={name}>
 
-            </NameContext.Provider>
         </div>
     );
 };

@@ -8,7 +8,9 @@ const Questions = () => {
     return (
         <div>
             {
-                questionContainer.map(question => <QuestionAns key={question.id} questionAns={question}></QuestionAns>)
+                questionContainer.map(question =>
+                    <QuestionAns key={question.id} questionAns={question}></QuestionAns>
+                )
             }
         </div>
     );
