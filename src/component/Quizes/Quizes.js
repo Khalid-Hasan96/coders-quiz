@@ -1,5 +1,9 @@
+import { createContext } from 'react';
 import { Link } from 'react-router-dom';
-import './Quizes.css'
+import Questions from '../Questions/Questions';
+import './Quizes.css';
+
+export const NameContext = createContext('name')
 
 const Quizes = ({ quiz }) => {
     const { id, logo, name, total } = quiz;
@@ -16,7 +20,9 @@ const Quizes = ({ quiz }) => {
                     <button className='btn btn-success hover:bg-green-500'><Link to={`/${id}`}>Start Quiz</Link ></button>
                 </div>
             </div>
+            <NameContext.Provider value={name}>
 
+            </NameContext.Provider>
         </div>
     );
 };
