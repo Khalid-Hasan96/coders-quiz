@@ -4,8 +4,9 @@ import './Quizes.css';
 
 const Quizes = ({ quiz }) => {
     const { id, logo, name, total } = quiz;
+
     return (
-        <div className='quiz bg-yellow-200'>
+        <div className='quiz bg-yellow-200 mb-5 sm:w-4/5 mx-auto'>
             <img className='border border-black bg-gray-200' src={logo} alt="" />
             <div className='flex justify-between items-center mt-5'>
                 <div className='p-2'>

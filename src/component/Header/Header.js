@@ -5,7 +5,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 w-11/12 mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -21,16 +21,14 @@ const Header = () => {
                     <img src={logo} className='logo' alt="" />
                     <Link to='/' className="btn btn-ghost normal-case text-3xl font-bold title">Coders Quiz</Link></div>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                     <li><Link className='font-semibold text-lg' to='/'>Home</Link></li>
                     <li><Link className='font-semibold text-lg' to='/statistics'>Statistics</Link></li>
                     <li><Link className='font-semibold text-lg' to='/blog'>Blog</Link></li>
                 </ul>
             </div>
-            <div className="navbar-end">
-                <Link to='/' className="btn btn-warning text-white font-medium">Get started</Link>
-            </div>
+
         </div>
     );
 };
