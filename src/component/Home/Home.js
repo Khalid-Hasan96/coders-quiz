@@ -11,7 +11,7 @@ const Home = () => {
         <div className='w-11/12 m-auto mt-5'>
             <div className='sm:flex flex-col items-center justify-center p-4 bg-yellow-100 rounded-lg md:flex-row'>
                 <div className='sm:w-4/4 md:w-2/4'>
-                    <h4 className='text-xl font-semibold'>Hello developers. Welcome to <Link to='/' className='text-2xl text-yellow-400'>Coders Quiz</Link>. Is your basic knowledge about CSS, JavaScript, React & Git is strong? Then participate quizes on our website. We have made some question for you to answer. Let's see how much you can answer. GOOD LUCK!!!io </h4>
+                    <h4 className='text-xl font-semibold'>Hello developers. Welcome to <Link to='/' className='text-2xl text-yellow-400'>Coders Quiz</Link>. Is your basic knowledge about CSS, JavaScript, React & Git is strong? Then participate quizes on our website. We have made some question for you to answer. Let's see how much you can answer. GOOD LUCK!!! </h4>
                 </div>
                 <div className='sm:w-4/4 md:w-2/4'>
                     <img src={MainImg} alt="" />
